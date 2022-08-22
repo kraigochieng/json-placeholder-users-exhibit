@@ -1,0 +1,91 @@
+.user-grid {
+    display: grid;
+}
+
+.page-title {
+    text-align: center;
+    padding: 25px 25px 0 25px;
+}
+
+.user {
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 320px;
+    margin: 50px auto 50px auto;
+    padding: 10px;
+    
+}
+
+.personal-data {
+    display: grid;
+    grid-template-areas: 'id username'
+                         'id name';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 30px;
+    border-bottom: solid 1px black;
+}
+
+.id {
+    grid-area: id;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    border-right: solid 1px black;
+}
+
+.username{ 
+    grid-area: username;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.name {
+    grid-area: name;
+    padding-left: 10px;
+}
+
+.address{
+    display: grid;
+    grid-template-areas: 'street suite'
+                         'city zipcode'
+                         'latitude longitude';
+    grid-gap: 10px;
+    padding: 10px 0 10px 0;
+    border: dashed 1px grey;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.street { grid-area: street; }
+.suite { grid-area: suite; }
+.city { grid-area: city; }
+.zipcode { grid-area: zipcode; }
+.latitude { grid-area: latitude; }
+.longitude { grid-area: longitude; }
+
+
+.address {
+    text-align: center;
+}
+
+.communication, .company {
+    border-top: solid 1px black;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px;
+    text-decoration: underline
+}
+
+.value {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
